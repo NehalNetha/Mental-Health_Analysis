@@ -10,7 +10,7 @@ To find out whether students' mental health affects their CGPA, we set out to as
 
 ### Data Description ###
 
-Data Size: 270 Rows X 9 Coloumns
+Data Size: 270 Rows X 9 Columns
 
 <img width="836" alt="Screenshot 2023-10-31 at 1 01 32 AM" src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/6cca047d-3e48-4f71-bbd7-c47fba6d4971">
 
@@ -18,7 +18,7 @@ Data Size: 270 Rows X 9 Coloumns
 
 Here we perform different data cleaning and processing, to get the dataset ready for further analysis and to get insights.
 
-1. We are changing the Name of Columns in the Dataset and the order of columns for better readbility
+1. We are changing the Name of Columns in the Dataset and the order of columns for better readability
    ```
    df.columns = ['Gender', "Age", "Year of Study", 'CGPA', "Depression", "Anxiety", "Panic Attack", "Treatment", "Date"]
    change_column = ["Date", 'Gender', "Age", "Year of Study", "Depression", "Anxiety", "Panic Attack", "Treatment", "CGPA"]
@@ -30,7 +30,7 @@ Here we perform different data cleaning and processing, to get the dataset ready
    ```
    
 
-2. We are converting TimeStamp into DateTime Object, extracting the date from it and dropping the timestamp because it had no further use
+2. We are converting TimeStamp into DateTime Object, extracting the date from it, and dropping the timestamp because it had no further use
 
     ```
    df['Timestamp'] = pd.to_datetime(df['Timestamp'], errors="coerce")
@@ -38,25 +38,25 @@ Here we perform different data cleaning and processing, to get the dataset ready
    df.drop('Timestamp', axis=1, inplace=True)
    ```
    
-3. finding out the missing values and filling the missing Values
+3. finding out the missing values and filling in the missing Values
 
    ```
    df.isnull().sum()
    df["Age"].fillna(df["Age"].mean(), inplace=True)
    df['Age'] = df['Age'].astype(int)
    ```
-4. Changing the structure of CGPA, extracting only the cgpa and not the range
+4. Changing the structure of CGPA, extracting only the CGPA and not the range
    ```
     df['CGPA'] = df['CGPA'].str.replace(r' - \d+\.\d+$', '', regex=True)
     df['CGPA'] = df['CGPA'].str.replace(r'- 4.00 ', '', regex=True)
    ```
-5. Replacing the String in "Year of Study" column and replacing it with an integer
+5. Replacing the String in the "Year of Study" column and replacing it with an integer
    
    ```
      df['Year of Study'] = df['Year of Study'].replace({'year 1': 1, 'Year 1': 1, "year 2": 2, 'Year 2': 2, 'year 3': 3, 'Year 3': 3, 'Year 4': 4, "year 4":     4})
    ```
 
-6. Changing the type of the columns in the dataFrame
+6. Changing the type of the columns in the data frame
    ```
      df['Age'] = df['Age'].astype(int)
      df['CGPA'] = df['CGPA'].astype(int)
@@ -64,13 +64,13 @@ Here we perform different data cleaning and processing, to get the dataset ready
 
 ### Data Analysis ###
 
-We used plotly, seaborn and matplotlib for the generating plots, even though plotly generates better plots than seaborn in terms of visual aestheics, We find it lacking in flexibility, so, we used both
+We used Plotly, seaborn, and matplotlib for the generating plots, even though Plotly generates better plots than Seaborn in terms of visual aesthetics, We find it lacking in flexibility, so, we used both
 
 
-Here we devided the Analysis part into three sections.
+Here we divided the Analysis part into three sections.
 First Section to see the frequency of values in columns
-Second Section to see the frequency of values in columns in relating to the other columns 
-First Section to see the Correlations between columns and getting insights
+Second Section to see the frequency of values in columns in relation to the other columns 
+First Section to see the Correlations between columns and get insights
 
 #### Section 1  ####
 
@@ -121,7 +121,7 @@ First Section to see the Correlations between columns and getting insights
 
 #### Section 2 ####
 
-1. Relation Between Age and Depression - Here we can see that there are more young students who suffer from depression, most likely case why this is because, probably young students have distorted view of depression, diagnosing themsevles as being depressed even though they may be lonely, sad or even having a couple of bad days
+1. Relation Between Age and Depression - Here we can see that there are more young students who suffer from depression, most likely case why this is because, probably young students have distorted view of depression, diagnosing themselves as being depressed even though they may be lonely, sad or even having a couple of bad days
 
 ![relation_age_depress](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/65bc0e3b-572f-4372-8928-e1abc486a930)
 
@@ -143,10 +143,10 @@ First Section to see the Correlations between columns and getting insights
 </table>
 
 
-3. How many who have Depression and Anxiety and Panic Attacks taking treatment?
-   There are 50 people who are suffering from Depression and also 50 people who are suffering from anxiey, some of these cases are overlapping, where people are suffering from depression are also suffering from anxiety.
+3. How many who have Depression Anxiety and Panic Attacks taking treatment?
+   There are 50 people who are suffering from Depression and also 50 people who are suffering from anxiety, some of these cases overlap, where people who are suffering from depression are also suffering from anxiety.
    and 14 people who are taking treatment
-   We also see the which gender are getting more treatment when they are suffering from a mental health problem
+   We also see which gender is getting more treatment when they are suffering from a mental health problem
    
 ![treatment](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/fd02a4e5-2496-4bf4-81c1-79b1723456cb)
 
@@ -177,14 +177,14 @@ Few plots to better understand the data of CGPA
 </table>
 
 1. Do people suffering from Depression Score Less?
-   Suprisingly the answer we got is No, people suffering from depression score no less than people suffering from depression, there may be many reasons      for this, the top most reason can maybe be the fact the people wrongle diagnose themselves as being depressed when they are probably just sad or maybe bad was something else going in their life when they gave the questionnarie, which maybe be baised. The finding is not counter-intitutie, because we're expecting this results when we were looking at the data.
+   Surprisingly the answer we got is No, people suffering from depression score no less than people suffering from depression, there may be many reasons      for this, the top reason can maybe be the fact that people wrongly diagnose themselves as being depressed when they are probably just sad or maybe bad was something else going in their life when they gave the questionnaire, which maybe be biased. The finding is not counter-intuitive, because we were expecting these results when we were looking at the data.
 
 Here we perform statistical analysis to find out whether there is the null hypothesis or the alternate hypothesis is true
 
-Null Hypothesis - There is no signicant difference in CGPA between depressed and not depressed individuals
-Alternate Hypothesis - There is signicant difference in CGPA between depressed and not depressed individuals
+Null Hypothesis - There is no significant difference in CGPA between depressed and not depressed individuals
+Alternate Hypothesis - There is a significant difference in CGPA between depressed and not depressed individuals
 
-Here we perform A two-sample t-test, also known as an independent samples t-test, is a statistical hypothesis test used to determine if there is a significant difference between the means of two independent groups. This test is commonly used when you want to compare the means of two different populations or groups to determine if the difference between them is statistically significant.
+Here we perform A two-sample t-test, also known as an independent samples t-test, which is a statistical hypothesis test used to determine if there is a significant difference between the means of two independent groups. This test is commonly used when you want to compare the means of two different populations or groups to determine if the difference between them is statistically significant.
 
    ```
    from scipy.stats import ttest_ind
@@ -200,7 +200,7 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
     print(f'There is no statistically significant difference in CGPA between depressed and not depressed individuals (p-value: {p_value}).') 
 
    ```
-> There is no statistically significant difference in CGPA between depressed and not depressed individuals (p-value: 0.7383723404465734).
+> There is no statistically significant difference in CGPA between depressed and not-depressed individuals (p-value: 0.7383723404465734).
 
    ```
    sns.boxplot(x='Depression', y='CGPA', data=data)
@@ -210,13 +210,13 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
    ```
  ![depression_p_test](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/08102d4b-e84c-4465-bd19-3b619e507c04)
 
- 2. Do people suffering from Anxiety score less.
+ 2. Do people suffering from Anxiety score less?
 
-   * Not suprisingle the answer is yes, people suffering from anxiety do score less than their peers, we can support the insight by taking when points in to consideration.
-   * First of all, people wrongly self diagnosing anxiety is far less than people self diagnosing depression, and people who has chronic anxiety do tend to know more about mental health problems, so they may answer the questionnarie objectively.
-   * Anxiety gets induced by stress, which is a common factor among all the students, and this can influence the academic output significantly. Anxiety has impact on concetration level and also test performance level
-   * Most importantly anxiety iduces escapism, which may lead to procastination and avoidance of projects and studying, students can negatively view whatever acadamic oppurtunities that can in their way.
-   *  Anxiety also has a toll on sleep patterns, and most importantly students may lean into anything that may help them get away from anxiety - these can be alhochol, drugs - mostly weed, and constant partying.
+   * Not surprisingly the answer is yes, people suffering from anxiety do score less than their peers, we can support the insight by taking when points into consideration.
+   * First of all, people wrongly self-diagnosing anxiety is far less than people self-diagnosing depression, and people who have chronic anxiety do tend to know more about mental health problems, so they may answer the questionnaire objectively.
+   * Anxiety is induced by stress, which is a common factor among all the students, and this can influence the academic output significantly. Anxiety has an impact on concentration level and also test performance level
+   * Most importantly anxiety induces escapism, which may lead to procrastination and avoidance of projects and studying, students can negatively view whatever academic opportunities that can in their way.
+   *  Anxiety also has a toll on sleep patterns, and most importantly students may lean into anything that may help them get away from anxiety - these can be alcohol, drugs - mostly weed, and constant partying.
     
 
    ```
@@ -232,4 +232,36 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
       
    ```
    >There is a statistically significant difference in CGPA between Students suffering from anxiety and Students not suffering from anxiety(p-value:          5.4222927421191395e-05).
+
+![gpa_anxiety_test](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/ef849895-3e48-437e-a2ac-73e1ffdc1db8)
+
+
+3. Do students getting treatment score more than people who are not?
+
+   The answer is no, well, one of the reasons why this might be is the limited amount of data that we have which can give improper results
+   * But also might be due to the reason that treatments in mental health don't cure everything that a student has, and it may take a lot of time to regain or maintain a suitable academic performance
+   * Each student's response to treatment is individual. What works for one student may not work as effectively for another. Factors like the severity of the condition, treatment compliance, and personal resilience play a significant role in treatment outcomes.
+   * Academic challenges are multifaceted and can result from a combination of factors, including personal circumstances, study habits, family support, and environmental stressors. Mental health treatment may address one aspect but not the entire spectrum of academic challenges.
+  
+
+```
+   dep_anx = data[(data['Depression'] == 'Yes') & (data['Anxiety'] == 'Yes')]
+
+   depression_and_anxiety_treatment = dep_anx[dep_anx["Treatment"] == "Yes"]
+   depression_and_anxiety_no_treatment = dep_anx[dep_anx["Treatment"] == "No"]
+
+   t_stat, p_value = ttest_ind(depression_and_anxiety_treatment['CGPA'],
+   depression_and_anxiety_no_treatment['CGPA'])
+
+
+   if p_value < 0.05:
+          print(f'There is a statistically significant difference in CGPA between the treatment and no-
+            treatment groups (p-value: {p_value}).')
+   else:
+          print(f'There is no statistically significant difference in CGPA between the treatment and no-t              treatment groups ( (p-value: {p_value}).')
+
+```
+> There is no statistically significant difference in CGPA between the treatment and no-treatment groups ( (p-value: 0.7383723404465734).
+> 
+![treatment_test](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/77e5c202-8ab9-4d5d-bf9b-953f0ec8f9d9)
 
