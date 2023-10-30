@@ -265,3 +265,31 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
 > 
 ![treatment_test](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/77e5c202-8ab9-4d5d-bf9b-953f0ec8f9d9)
 
+4.  Does Mental issues affect Gender in a different way, and its relation to CGPA
+
+   We try to find whether women or men, cope better when it's mental health problems and perform better even    if they're suffering from one. I personally thought women would be able to cope much better than men, but    I turned out to be wrong, there's no statistically significant difference between gender and the ability
+   to perform better in spite of mental health problems
+   * The absence of a gender-based difference in coping with mental health problems and academic performance suggests that resilience and coping strategies are not inherently gender-dependent. Both men and women       have the capacity to handle challenges effectively.
+   * Also the fact the academic pressure tends to be the same on both genders and also a lot of issues excluding some. This may lead to the overall same performance when it comes to academics
+
+```
+   f_stat, p_value = f_oneway(
+       depression_data[depression_data['Gender'] == 'Male']['CGPA'],
+       depression_data[depression_data['Gender'] == 'Female']['CGPA'],
+       dep_no[dep_no['Gender'] == 'Male']['CGPA'],
+       dep_no[dep_no['Gender'] == 'Female']['CGPA']
+   )
+
+   if p_value < 0.05:
+       print(f'There is a statistically significant difference in CGPA among different groups (p-value:             {p_value}).')
+   else:
+       print(f'There is no statistically significant difference in CGPA among different groups (p-value:            {p_value}).')
+
+
+```
+   > There is a statistically significant difference in CGPA among different groups (p-value:             
+     0.02399196377881738).
+
+
+
+
