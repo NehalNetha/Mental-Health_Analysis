@@ -212,11 +212,11 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
 
  2. Do people suffering from Anxiety score less.
 
-    Not suprisingle the answer is yes, people suffering from anxiety do score less than their peers, we can support the insight by taking when points in to consideration.
-    First of all, people wrongly self diagnosing anxiety is far less than people self diagnosing depression, and people who has chronic anxiety do tend to know more about mental health problems, so they may answer the questionnarie objectively.
-    Anxiety gets induced by stress, which is a common factor among all the students, and this can influence the academic output significantly. Anxiety has impact on concetration level and also test performance level
-    Most importantly anxiety iduces escapism, which may lead to procastination and avoidance of projects and studying, students can negatively view whatever acadamic oppurtunities that can in their way.
-    Anxiety also has a toll on sleep patterns, and most importantly students may lean into anything that may help them get away from anxiety - these can be alhochol, drugs - mostly weed, and constant partying.
+   * Not suprisingle the answer is yes, people suffering from anxiety do score less than their peers, we can support the insight by taking when points in to consideration.
+   * First of all, people wrongly self diagnosing anxiety is far less than people self diagnosing depression, and people who has chronic anxiety do tend to know more about mental health problems, so they may answer the questionnarie objectively.
+   * Anxiety gets induced by stress, which is a common factor among all the students, and this can influence the academic output significantly. Anxiety has impact on concetration level and also test performance level
+   * Most importantly anxiety iduces escapism, which may lead to procastination and avoidance of projects and studying, students can negatively view whatever acadamic oppurtunities that can in their way.
+   *  Anxiety also has a toll on sleep patterns, and most importantly students may lean into anything that may help them get away from anxiety - these can be alhochol, drugs - mostly weed, and constant partying.
     
 
    ```
