@@ -208,5 +208,6 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
    plt.show()
 
    ```
-   ![cgpa_gender](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/ddc0e594-4bfa-4680-adae-13cd57045504)
+ ![depression_p_test](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/08102d4b-e84c-4465-bd19-3b619e507c04)
+
 
