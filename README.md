@@ -1,4 +1,4 @@
-# Mental-Health_Analysis
+# Mind Matters: Exploring the Relationship Between Mental Health and Academic Performance (CGPA) in College Students
 
 ### Analysing how Mental Health Issues correlate to CGPA ###
 
@@ -175,4 +175,7 @@ Few plots to better understand the data of CGPA
     </td>
   </tr>
 </table>
+
+1. Do people suffering from Depression Score Less?
+   Suprisingly the answer we got is No, people suffering from depression score no less than people suffering from depression
 
