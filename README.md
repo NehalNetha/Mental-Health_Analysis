@@ -177,5 +177,29 @@ Few plots to better understand the data of CGPA
 </table>
 
 1. Do people suffering from Depression Score Less?
-   Suprisingly the answer we got is No, people suffering from depression score no less than people suffering from depression
+   Suprisingly the answer we got is No, people suffering from depression score no less than people suffering from depression, there may be many reasons      for this, the top most reason can maybe be the fact the people wrongle diagnose themselves as being depressed when they are probably just sad or maybe bad was something else going in their life when they gave the questionnarie, which maybe be baised. The finding is not counter-intitutie, because we're expecting this results when we were looking at the data.
+
+Here we perform statistical analysis to find out whether there is the null hypothesis or the alternate hypothesis is true
+
+Null Hypothesis - There is no signicant difference in CGPA between depressed and not depressed individuals
+Alternate Hypothesis - There is signicant difference in CGPA between depressed and not depressed individuals
+
+Here we perform A two-sample t-test, also known as an independent samples t-test, is a statistical hypothesis test used to determine if there is a significant difference between the means of two independent groups. This test is commonly used when you want to compare the means of two different populations or groups to determine if the difference between them is statistically significant.
+
+   ```
+   from scipy.stats import ttest_ind
+   from scipy.stats import f_oneway
+   
+   dep_no = data[data["Depression"] == 'No']
+   depression_data = depression_data[depression_data["Treatment"] == 'Yes']
+
+   t_stat, p_value = ttest_ind(depression_data["CGPA"], dep_no["CGPA"])
+   if p_value < 0.05:
+    print(f'There is a statistically significant difference in CGPA between depressed and not depressed individuals (p-value: {p_value}).')
+   else:
+    print(f'There is no statistically significant difference in CGPA between depressed and not depressed individuals (p-value: {p_value}).') 
+
+   ```
+> There is no statistically significant difference in CGPA between depressed and not depressed individuals (p-value: 0.7383723404465734).
+
 
