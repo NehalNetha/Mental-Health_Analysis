@@ -155,6 +155,24 @@ First Section to see the Correlations between columns and getting insights
 
 ![study_treat](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/11767a67-924b-4a4a-ac7f-2acf51b3250b)
 
+###Section 3###
 
+In this Section we try to get insights into the data, we try to see whether mental health problems actually influence the CGPA
 
+Few plots to better understand the data of CGPA
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/69e3f346-ac58-4571-8c4b-0a99d068ba4a" alt="menVsWomen">
+      <br>
+     Distribution of CGPA by Year of Gender
+    </td>
+    <td align="center">
+      <img src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/7bb0ab39-f1af-4e36-bb2d-a70e79b013f0" alt="Age">
+      <br>
+      Distribution of CGPA by Year of Study
+    </td>
+  </tr>
+</table>
 
