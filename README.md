@@ -72,7 +72,7 @@ First Section to see the frequency of values in columns
 Second Section to see the frequency of values in columns in relating to the other columns 
 First Section to see the Correlations between columns and getting insights
 
-####Section 1 ####
+###Section 1 ###
 
 
 <table>
@@ -119,6 +119,31 @@ First Section to see the Correlations between columns and getting insights
   </tr>
 </table>
 
+#### Section 2 ####
 
-   
+1. Relation Between Age and Depression - Here we can see that there are more young students who suffer from depression, most likely case why this is because, probably young students have distorted view of depression, diagnosing themsevles as being depressed even though they may be lonely, sad or even having a couple of bad days
+
+![relation_age_depress](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/65bc0e3b-572f-4372-8928-e1abc486a930)
+
+2. Study year and students suffering from Depression and Anxiety
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/15b1446f-53a9-4d11-aa6e-82dc80cf6d34" alt="menVsWomen">
+      <br>
+     Year of Study vs Anxiety
+    </td>
+    <td align="center">
+      <img src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/d1926e5c-1dd8-42b0-8443-56d2a3d71dc0" alt="Age">
+      <br>
+      Year of Study vs Depression
+    </td>
+  </tr>
+</table>
+
+
+
+
+
 
