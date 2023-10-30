@@ -202,4 +202,11 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
    ```
 > There is no statistically significant difference in CGPA between depressed and not depressed individuals (p-value: 0.7383723404465734).
 
+   ```
+   sns.boxplot(x='Depression', y='CGPA', data=data)
+   plt.title('CGPA vs Depression')
+   plt.show()
+
+   ```
+   ![cgpa_gender](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/ddc0e594-4bfa-4680-adae-13cd57045504)
 
