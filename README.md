@@ -147,9 +147,13 @@ First Section to see the Correlations between columns and getting insights
    There are 50 people who are suffering from Depression and also 50 people who are suffering from anxiey, some of these cases are overlapping, where people are suffering from depression are also suffering from anxiety.
    and 14 people who are taking treatment
    We also see the which gender are getting more treatment when they are suffering from a mental health problem
+   
 ![treatment](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/fd02a4e5-2496-4bf4-81c1-79b1723456cb)
 
-   
+4. Who gets more treatment? which year?
+   Which year students are getting more treatment when they are suffering from a mental health problem
+
+![study_treat](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/11767a67-924b-4a4a-ac7f-2acf51b3250b)
 
 
 
