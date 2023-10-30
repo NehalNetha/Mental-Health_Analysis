@@ -1,6 +1,6 @@
 # Mental-Health_Analysis
 
-###Analysing how Mental Health Issues correlate to CGPA###
+### Analysing how Mental Health Issues correlate to CGPA ###
 
 Students not only sacrifice their sleep, food, and all other activities, to devote themselves to academics, leaving their well-being and mental health behind. Peer pressure, combined with unrealistic academic deadlines and outputs, unworkable teams, and competitive spirit at the very age where our urge for self-discovery peaks. This leads to the mental burden, and stress if not well-taken care can end up with chronic anxiety, depression, and panic attacks.
 
@@ -8,13 +8,13 @@ To find out whether students' mental health affects their CGPA, we set out to as
 
 <img width="1003" alt="Screenshot 2023-10-31 at 12 50 17 AM" src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/e76a550a-f215-4bd6-8a68-4884589ac51c">
 
-###Data Description###
+### Data Description ###
 
 Data Size: 270 Rows X 9 Coloumns
 
 <img width="836" alt="Screenshot 2023-10-31 at 1 01 32 AM" src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/6cca047d-3e48-4f71-bbd7-c47fba6d4971">
 
-###Data PreProcessing###
+### Data PreProcessing ###
 
 Here we perform different data cleaning and processing, to get the dataset ready for further analysis and to get insights.
 
@@ -72,7 +72,7 @@ First Section to see the frequency of values in columns
 Second Section to see the frequency of values in columns in relating to the other columns 
 First Section to see the Correlations between columns and getting insights
 
-###Section 1 ###
+#### Section 1  ####
 
 
 <table>
@@ -155,7 +155,7 @@ First Section to see the Correlations between columns and getting insights
 
 ![study_treat](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/11767a67-924b-4a4a-ac7f-2acf51b3250b)
 
-###Section 3###
+#### Section 3 ####
 
 In this Section we try to get insights into the data, we try to see whether mental health problems actually influence the CGPA
 
