@@ -6,4 +6,4 @@ Students not only sacrifice their sleep, food, and all other activities, to devo
 
 To find out whether students' mental health affects their CGPA, we set out to ask some questions, our obvious choice was Reddit, where millions of users, can be chosen from specific demographics. We made a questionnaire using Google Forms, and uploaded them on the subreddit r/India, and also crossposted them on different subreddits, we also shared the questionnaire with our friends in the college to get their responses.
 
-<img width="1423" alt="Screenshot 2023-10-31 at 12 50 17 AM" src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/e76a550a-f215-4bd6-8a68-4884589ac51c">
+<img width="1003" alt="Screenshot 2023-10-31 at 12 50 17 AM" src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/e76a550a-f215-4bd6-8a68-4884589ac51c">
