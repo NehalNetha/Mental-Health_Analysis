@@ -62,3 +62,28 @@ Here we perform different data cleaning and processing, to get the dataset ready
      df['CGPA'] = df['CGPA'].astype(int)
    ```
 
+### Data Analysis ###
+
+We used plotly, seaborn and matplotlib for the generating plots, even though plotly generates better plots than seaborn in terms of visual aestheics, We find it lacking in flexibility, so, we used both
+
+
+Here we devided the Analysis part into three sections.
+First Section to see the frequency of values in columns
+Second Section to see the frequency of values in columns in relating to the other columns 
+First Section to see the Correlations between columns and getting insights
+
+####Section 1 ####
+1. Occurance of Male and and Female in the dataset
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![menVsWomen](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/75d0e701-fc16-402c-91f1-d86795f3f945)  |  ![Age](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/70cf0eab-0ff9-4471-8cab-f27e0ea88fb4)
+
+   
+
+
+![YearofStudy](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/f0d84852-96e2-4979-b521-02668b3b4989)
+![depression](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/2dfbe698-0891-45ce-b99c-489405f70387)
+![Anxiety](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/9577d75d-9bf0-4da5-a32c-398d74f992ee)
+![panicAttack](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/583e4e3e-92aa-4b1a-ba76-7ccf39c136ff)
+![treatment](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/6f61caf4-a0f1-4c7e-ba3e-f58cf3c5b748)
