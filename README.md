@@ -80,12 +80,12 @@ First Section to see the Correlations between columns and getting insights
     <td align="center">
       <img src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/75d0e701-fc16-402c-91f1-d86795f3f945" alt="menVsWomen">
       <br>
-      Solarized Dark
+      Men Vs Women
     </td>
     <td align="center">
       <img src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/70cf0eab-0ff9-4471-8cab-f27e0ea88fb4" alt="Age">
       <br>
-      Solarized Ocean
+      Age
     </td>
     <td align="center">
       <img src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/f0d84852-96e2-4979-b521-02668b3b4989" alt="YearofStudy">
