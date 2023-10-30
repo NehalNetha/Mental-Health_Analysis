@@ -191,7 +191,7 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
    from scipy.stats import f_oneway
    
    dep_no = data[data["Depression"] == 'No']
-   depression_data = depression_data[depression_data["Treatment"] == 'Yes']
+   depression_data = data[data["Depression"] == 'Yes']
 
    t_stat, p_value = ttest_ind(depression_data["CGPA"], dep_no["CGPA"])
    if p_value < 0.05:
@@ -210,4 +210,26 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
    ```
  ![depression_p_test](https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/08102d4b-e84c-4465-bd19-3b619e507c04)
 
+ 2. Do people suffering from Anxiety score less.
+
+    Not suprisingle the answer is yes, people suffering from anxiety do score less than their peers, we can support the insight by taking when points in to consideration.
+    First of all, people wrongly self diagnosing anxiety is far less than people self diagnosing depression, and people who has chronic anxiety do tend to know more about mental health problems, so they may answer the questionnarie objectively.
+    Anxiety gets induced by stress, which is a common factor among all the students, and this can influence the academic output significantly. Anxiety has impact on concetration level and also test performance level
+    Most importantly anxiety iduces escapism, which may lead to procastination and avoidance of projects and studying, students can negatively view whatever acadamic oppurtunities that can in their way.
+    Anxiety also has a toll on sleep patterns, and most importantly students may lean into anything that may help them get away from anxiety - these can be alhochol, drugs - mostly weed, and constant partying.
+    
+
+   ```
+   
+   anx_no = data[data["anxiety"] == 'No']
+   anxiety_data = data[data["Depression"] == 'Yes']
+
+   t_stat, p_value = ttest_ind(anxiety_data["CGPA"], anx_no["CGPA"])
+   if p_value < 0.05:
+       print(f'There is a statistically significant difference in CGPA between Students suffering from anxiety and Students not suffering from anxiety(p-         value: {p_value}).')
+   else:
+       print(f'There is no statistically significant difference in CGPA between the groups (p-value: {p_value}).')
+      
+   ```
+   >There is a statistically significant difference in CGPA between Students suffering from anxiety and Students not suffering from anxiety(p-value:          5.4222927421191395e-05).
 
