@@ -6,6 +6,8 @@ Students not only sacrifice their sleep, food, and all other activities, to devo
 
 To find out whether students' mental health affects their CGPA, we set out to ask some questions, our obvious choice was Reddit, where millions of users, can be chosen from specific demographics. We made a questionnaire using Google Forms, and uploaded them on the subreddit r/India, and also crossposted them on different subreddits, we also shared the questionnaire with our friends in the college to get their responses.
 
+Caution : While the dataset was predominantly collected from online sources and surveying, it's important to acknowledge that the nature of self-reported data, as obtained from online surveys, might introduce certain biases. Participants may be more inclined to respond based on their own interests or experiences, potentially affecting the representativeness of the data.
+
 <img width="1003" alt="Screenshot 2023-10-31 at 12 50 17 AM" src="https://github.com/NehalNetha/Mental-Health_Analysis/assets/84872197/e76a550a-f215-4bd6-8a68-4884589ac51c">
 
 ### Data Description ###
@@ -292,4 +294,23 @@ Here we perform A two-sample t-test, also known as an independent samples t-test
 
 
 
+### Conclusion ###
 
+Our analysis leads us to some key findings that shed light on mental well-being and academic performance. This may help better understand the implication of mental health on academic output among college students.
+
+1. Number one is obviously the mental health issues being prevalent among students, and many of them not receiving any type of treatment.
+2. Depression and Academic Performance: Surprisingly, we found no statistically significant difference in the academic performance (measured by CGPA) of students suffering from depression compared to those who are not. Several factors, including potential misdiagnoses, variations in personal experiences, and biases in self-reporting, may contribute to this finding.
+3. Anxiety and Academic Performance: In contrast to depression, students suffering from anxiety tend to score lower in their CGPA compared to their peers. This insight aligns with the well-established connection between anxiety and reduced concentration, academic performance, and overall well-being. Stress-induced escapism, procrastination, and lifestyle choices such as substance use were observed as potential contributing factors.
+4. Resilience Across Genders: Contrary to some stereotypes, our analysis showed that there is no statistically significant difference between genders in coping with mental health problems and their impact on academic performance. This suggests that resilience and coping strategies are not inherently gender-dependent, emphasizing that both men and women have the capacity to handle challenges effectively.
+
+
+
+### Implications ###
+
+Our findings have implications for educational institutions and students.
+
+1. Most educational institutions burden students with more work for better academic output, this may be counter-productive as it can make students less attuned to their well-being and ignore all kinds of self-care which may lead to academic decline rather than better performance. A better option would be less important work, rather than giving rote work like writing a journal which doesn't have any kind of learning curve whatsoever, just jotting down whatever's on the screen to paper, work can be given that's interesting and creative.
+2. Less lectures, and more time to explore, will be better given that this is the age of self-discovery and also because most of the students do learning outside the college.
+3. Encouraging a balance between academic pursuits and well-being is essential. High-pressure academic environments should consider the potential impact on students' mental health and implement measures to reduce stress.
+
+Our data is less and based on questionnaires, which can be very biased, further research and obtaining more data into this work will be crucial in further reporting our findings
